@@ -8,8 +8,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          cd ./.github/actions/export-issues
+          npm install
+
       - name: Run export issues action
-        uses: ./
+        uses: ./.github/actions/export-issues
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
