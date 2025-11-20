@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Run export issues action
-        uses: pconteo/download-issue-action/@v1
+        uses: .github/workflows/main.yml@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
