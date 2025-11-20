@@ -13,7 +13,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd ./.github/actions/export-issues
+          cd ./
           npm install
 
       - name: Run export issues action
