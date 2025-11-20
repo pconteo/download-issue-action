@@ -1,0 +1,12 @@
+name: "Export Issues to XLSX"
+description: "Exports repository issues to an XLSX file"
+
+inputs:
+  output:
+    description: "Output XLSX file name"
+    required: false
+    default: "issues.xlsx"
+
+runs:
+  using: "node20"
+  main: "index.js"
