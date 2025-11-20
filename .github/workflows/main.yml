@@ -17,7 +17,7 @@ jobs:
           npm install
 
       - name: Run export issues action
-        uses: ./.github/actions/export-issues
+        uses: ./
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
