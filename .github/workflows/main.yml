@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Run export issues action
-        uses: ./.github/actions/export-issues   # path della tua action
+        uses: pconteo/download-issue-action/@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
