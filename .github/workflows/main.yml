@@ -9,10 +9,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4   # <-- fondamentale
+        uses: actions/checkout@v4
 
       - name: Run export issues action
-        uses: ./.github/actions/export-issues
+        uses: ./.github/export-issues
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
